@@ -4,6 +4,9 @@
   justify-content: space-between;
 }
 
+#Rating{
+    padding: 0px 0px 0px 13px;
+}
 .featuredItem {
   flex: 1;
   margin: 0px 20px;
@@ -16,6 +19,11 @@
 
 .featuredTitle{
     font-size: 20px;
+}
+
+.featuredTitleDetail{
+    font-size: 15px;
+
 }
 
 .featuredMoneyContainer{
@@ -49,4 +57,21 @@
 .featuredSub{
     font-size: 15px;
     color: #c31348;
+}
+
+.featuredProductImg{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+}
+
+.widgetSmUser{
+    display: flex;
+    margin-top: 10px;
+
+    align-items: center;
+    justify-content: center;
+    
 }
