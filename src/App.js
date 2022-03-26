@@ -13,7 +13,15 @@ import NewProduct from "./pages/newProduct/NewProduct";
 function App() {
   return (
     <Router>
-      <Topbar />
+      <div className="Appxx">  </div>
+      <div className="App">
+         <div spc="space"> { "⠀" } </div>
+         <div spc="space"> { "⠀" } </div>
+            <Topbar />
+            <div spc="space"> { "⠀" } </div>
+            </div>
+
+      
       <div className="container">
         <Sidebar />
         <Switch>

@@ -1,51 +1,82 @@
 export const userData = [
     {
-      name: "Jan",
-      "Orders": 4000,
+      name: "7 AM",
+      "Orders": 22,
     },
     {
-      name: "Feb",
-      "Orders": 3000,
+      name: "8 AM",
+      "Orders": 28,
     },
     {
-      name: "Mar",
-      "Orders": 5000,
+      name: "9 AM",
+      "Orders": 85,
     },
     {
-      name: "Apr",
-      "Orders": 4000,
+      name: "10 AM",
+      "Orders": 15,
     },
     {
-      name: "May",
-      "Orders": 3000,
+      name: "11 AM",
+      "Orders": 24,
     },
     {
-      name: "Jun",
-      "Orders": 2000,
+      name: "12 PM",
+      "Orders": 120,
     },
     {
-      name: "Jul",
-      "Orders": 4000,
+      name: "1 PM",
+      "Orders": 290,
     },
     {
-      name: "Agu",
-      "Orders": 3000,
+      name: "2 PM",
+      "Orders": 85,
     },
     {
-      name: "Sep",
-      "Orders": 4000,
+      name: "3 PM",
+      "Orders": 52,
     },
     {
-      name: "Oct",
-      "Orders": 1000,
+      name: "4 PM",
+      "Orders": 45,
     },
     {
-      name: "Nov",
-      "Orders": 4000,
+      name: "5 PM",
+      "Orders": 40,
     },
     {
-      name: "Dec",
-      "Orders": 3000,
+      name: "6 PM",
+      "Orders": 35,
+    },
+    {
+      name: "7 PM",
+      "Orders": 63,
+    },
+
+    {
+      name: "8 PM",
+      "Orders": 76,
+    },
+
+    {
+      name: "9 PM",
+      "Orders": 50,
+    },
+
+    {
+      name: "10 PM",
+      "Orders": 38,
+    },
+    {
+      name: "11 PM",
+      "Orders": 70,
+    },
+    {
+      name: "12 AM",
+      "Orders": 220,
+    },
+    {
+      name: "1 AM",
+      "Orders": 30,
     },
   ];
 

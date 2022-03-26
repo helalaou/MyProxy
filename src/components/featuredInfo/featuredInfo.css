@@ -24,6 +24,7 @@
     align-items: center;
 }
 
+ 
 .featuredMoney{
     font-size: 30px;
     font-weight: 600;
@@ -38,14 +39,14 @@
 .featuredIcon{
     font-size: 14px;
     margin-left: 5px;
-    color: green;
+    color: #aaa827;
 }
 
 .featuredIcon.negative{
-    color: red;
+    color: #c31348;
 }
 
 .featuredSub{
     font-size: 15px;
-    color: gray;
+    color: #c31348;
 }
