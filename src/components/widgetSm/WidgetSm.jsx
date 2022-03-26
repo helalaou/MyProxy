@@ -8,7 +8,7 @@ export default function WidgetSm() {
       <ul className="widgetSmList">
         <li className="widgetSmListItem">
           <img
-            src="https://cdn1.iconfinder.com/data/icons/messenger-and-society/16/user_person_avatar_unisex-512.png"
+            src="https://i.ibb.co/5KgBXrk/image.png"
             alt=""
             className="widgetSmImg"
           />
@@ -16,7 +16,7 @@ export default function WidgetSm() {
             <span className="widgetSmUsername">Salim Yaakoubi</span>
             <div className="ratingDiv">
             <img src="https://img.icons8.com/color/48/000000/star.png" alt="star" className="widgetSmIcon" />
-            <span className="widgetSmUserRate">4.5/5.0</span>
+            <span className="widgetSmUserRate">3.5/5.0</span>
             </div>
            </div>
           <button className="widgetSmButton">

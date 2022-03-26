@@ -196,7 +196,7 @@ export const userData = [
         "https://img.cuisineaz.com/610x610/2019/04/17/i146583-tacos-poulet-curry.jpeg",
       Client: "Hamza El Alaoui",
       Details: "Avec sauce algerian",
-      Estimated_Time: "15:00 MIN",
+      Estimated_Time: "13:10 MIN",
       price: "24.00 MAD",
       Status: "Pending"
     },

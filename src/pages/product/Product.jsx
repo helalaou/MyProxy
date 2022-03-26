@@ -31,6 +31,11 @@ export default function Product() {
                       <span className="productInfoKey">Price:</span>
                       <span className="productInfoValue">22.06 MAD</span>
                   </div>
+                  <div className="productInfoKey">
+                      <span className="productInfoKey">Description:</span>
+                      <span className="productInfoValue"> Avec sauce algerian</span>
+                  </div>
+                
               </div>
           </div>
       </div>
@@ -40,8 +45,9 @@ export default function Product() {
                    
                   <label>ORDER STATUS</label>
                   <select name="Order Status" id="active">
-                      <option value="Approved">Approved</option>
-                      <option value="Pending">Pending</option>
+                     <option value="Pending">Pending</option>
+                      <option value="In-Preparation">In-Preparation</option>
+                      <option value="Ready">Ready</option>
                       <option value="Canceled">Canceled</option>
                   </select>
               </div>
