@@ -4,10 +4,9 @@ const app=express();
 const FoodModel=require('./models/food');
 const OrderModel=require('./models/order');
 const foodsArray=require('./controller/orderController');
-
-
-
-
+//.env file
+const dotenv=require('dotenv');
+dotenv.config();
 
 
 
