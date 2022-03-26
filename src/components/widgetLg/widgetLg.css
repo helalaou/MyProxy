@@ -8,6 +8,7 @@
 .widgetLgTitle {
   font-size: 22px;
   font-weight: 600;
+  color: #c31348;
 }
 
 .widgetLgTable{
@@ -41,13 +42,14 @@
   padding: 5px 7px;
   border: none;
   border-radius: 10px;
+  width: 120%;
 }
 
-.widgetLgButton.Approved{
+.widgetLgButton.In-Preparation{
     background-color: #e5faf2;
     color: #3bb077;
 }
-.widgetLgButton.Declined{
+.widgetLgButton.Canceled{
     background-color: #fff0f1;
     color: #d95087;
 
