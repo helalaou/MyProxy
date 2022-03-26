@@ -9,6 +9,7 @@
 .widgetSmTitle{
     font-size: 22px;
     font-weight: 600;
+    color: #c31348;
 }
 
 .widgetSmImg{
@@ -38,6 +39,7 @@
 
 .widgetSmUsername{
     font-weight: 600;
+
 }
 
 .widgetSmUserTitle{
@@ -56,6 +58,15 @@
 }
 
 .widgetSmIcon{
-    font-size: 16px !important;
-    margin-right: 5px;
+width: 15px;
+height: 15px;
+margin-right: 5px
+
+}
+
+.ratingDiv{
+display: flex;
+align-items: center;
+
+
 }
