@@ -40,6 +40,9 @@ function App() {
           <Route path="/product/:productId">
             <Product />
           </Route>
+          <Route path="/fakerequests">
+            <fakeForm/>
+          </Route>
           
         </Switch>
       </div>
