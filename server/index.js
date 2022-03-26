@@ -4,6 +4,10 @@ const app=express();
 const FoodModel=require('./models/food');
 const OrderModel=require('./models/order');
 const foodsArray=require('./controller/orderController');
+//.env file
+const dotenv=require('dotenv');
+dotenv.config();
+
 
 
 
@@ -17,7 +21,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
 
-mongooose.connect('mongodb+srv://mehdios36000:aqzsedrftg1A-@myproxyd.dmbcn.mongodb.net/Food?retryWrites=true&w=majority',{
+mongooose.connect(dotenv.URL,{
     useNewUrlParser:true,
 })
 
