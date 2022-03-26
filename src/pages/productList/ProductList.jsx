@@ -1,12 +1,12 @@
 import "./productList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
-import { productRows } from "../../dummyData";
+import { OrderRows } from "../../dummyData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function ProductList() {
-  const [data, setData] = useState(productRows);
+  const [data, setData] = useState(OrderRows);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
@@ -15,7 +15,7 @@ export default function ProductList() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "product",
+      field: "Product",
       headerName: "Product",
       width: 200,
       renderCell: (params) => {
@@ -27,17 +27,30 @@ export default function ProductList() {
         );
       },
     },
-    { field: "stock", headerName: "Stock", width: 200 },
+    { field: "Client", headerName: "Client", width: 170 }
+    ,
     {
-      field: "status",
-      headerName: "Status",
+      field: "Details",
+      headerName: "Details",
       width: 120,
     },
     {
       field: "price",
       headerName: "Price",
-      width: 160,
+      width: 150,
     },
+    {
+      field: "Estimated_Time",
+      headerName: "Estimated Time",
+      width: 200,
+    },
+    {
+      field: "Status",
+      headerName: "Status",
+      width: 115,
+      
+    },
+
     {
       field: "action",
       headerName: "Action",
@@ -56,6 +69,8 @@ export default function ProductList() {
         );
       },
     },
+
+    
   ];
 
   return (
@@ -64,7 +79,7 @@ export default function ProductList() {
         rows={data}
         disableSelectionOnClick
         columns={columns}
-        pageSize={8}
+        pageSize={10}
         checkboxSelection
       />
     </div>

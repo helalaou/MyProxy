@@ -188,95 +188,17 @@ export const userData = [
     },
   ];
 
-  export const productRows = [
+  export const OrderRows = [
     {
       id: 1,
-      name: "Apple Airpods",
+      name: "Tacos Poulet",
       img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
+        "https://img.cuisineaz.com/610x610/2019/04/17/i146583-tacos-poulet-curry.jpeg",
+      Client: "Hamza El Alaoui",
+      Details: "Avec sauce algerian",
+      Estimated_Time: "15:00 MIN",
+      price: "24.00 MAD",
+      Status: "Pending"
     },
-    {
-      id: 2,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 3,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 4,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 5,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 6,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 7,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 8,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 9,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
-    {
-      id: 10,
-      name: "Apple Airpods",
-      img:
-        "https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      stock: 123,
-      status: "active",
-      price: "$120.00",
-    },
+     
   ];
