@@ -16,11 +16,19 @@ export default function Product() {
     const { productId } = useParams();
     //string to int 
 
-    const [order, setOrder] = useState([]);
+    const [order, setOrder] = useState({});
 
     useEffect(() => {
-     let orderArr = OrderRows.filter((item) => item.id === parseInt(productId));
-    setOrder(orderArr[0]);
+    axios.get(`http://localhost:3001/getOrder/${productId}`).then(function(response){
+        setOrder(response.data);
+        console.log(response.data)
+    }
+    ).catch(function(error){
+        console.log(error);
+    }
+    );
+
+     
 
     }, [productId]);
     
@@ -32,19 +40,7 @@ export default function Product() {
         //handlePost(order);
     }
 
-/*post the data to the server using axios  """""""""" MEHDI EDIT THIS"""""""""""
 
-    const handlePost = (order) => {
-        axios.post("http://localhost:5000/api/orders", order)
-        .then(res => {
-            console.log(res.data);
-        }
-        )
-        .catch(err => {
-            console.log(err);
-        }
-        )
-    }*/
 
 
 
@@ -58,21 +54,21 @@ export default function Product() {
           <div className="productTopRight">
               <div className="productInfoTop">
                   <img src="https://img.cuisineaz.com/610x610/2019/04/17/i146583-tacos-poulet-curry.jpeg" alt="" className="productInfoImg" />
-                  <span className="productName">{order.name}</span>
+                  <span className="productName">{order.NameClient}</span>
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
                       <span className="productInfoKey">Customer ID: </span>
-                      <span className="productInfoValue">{order.IdClient}</span>
+                      <span className="productInfoValue">{order.id}</span>
                   </div>
                   
                   <div className="productInfoItem">
                       <span className="productInfoKey">Customer: </span>
-                      <span className="productInfoValue">{order.Client}</span>
+                      <span className="productInfoValue">{order.NameClient}</span>
                   </div>
                   <div className="productInfoItem">
                       <span className="productInfoKey">Price: </span>
-                      <span className="productInfoValue">{order.price}</span>
+                      <span className="productInfoValue">{order.id}</span>
                   </div>
                   <div className="productInfoKey">
                       <span className="productInfoKey">Description: </span>
@@ -91,10 +87,10 @@ export default function Product() {
                    
                   <label>ORDER STATUS</label>
                   <div className="buttonsclass">
-                  <button class="button" id="Pending" onClick={(e) => handleClick(e, "Pending")}>Pending</button> 
-                  <button class="button" id="Canceled" onClick={(e) => handleClick(e,"Canceled")} >Canceled</button>
-                  <button class="button" id="InPreparation" onClick={(e) => handleClick(e, "InPreparation")}>In Preparation</button>
-                  <button class="button" id="Ready" onClick={(e) => handleClick(e,"Ready")}>Ready</button>
+                  <button className="button" id="Pending" onClick={(e) => handleClick(e, "Pending")}>Pending</button> 
+                  <button className="button" id="Canceled" onClick={(e) => handleClick(e,"Canceled")} >Canceled</button>
+                  <button className="button" id="InPreparation" onClick={(e) => handleClick(e, "InPreparation")}>In Preparation</button>
+                  <button className="button" id="Ready" onClick={(e) => handleClick(e,"Ready")}>Ready</button>
                   </div>
               </div>
         
