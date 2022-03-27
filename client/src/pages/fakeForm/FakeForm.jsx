@@ -23,11 +23,20 @@ export default function FakeForm() {
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        // store the time and date 
-        data.date = GetDate();
-        data.time = GetTime();
-       // console.log(data);
+        axios.post("http://localhost:3001/addOrder", data)
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+            .catch(err => {
+                console.log(err);
+            }
+            );
     }
+
+
+       console.log(data);
+    
 
     //Get Date  {Day, Month, Year}
     const GetDate = () => {
