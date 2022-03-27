@@ -34,7 +34,7 @@ export default function WidgetSm() {
             <span className="widgetSmUsername">Nada Moussaoui</span>
             <div className="ratingDiv">
             <img src="https://img.icons8.com/color/48/000000/star.png" alt="star" className="widgetSmIcon" />
-            <span className="widgetSmUserRate">4.5/5.0</span>
+            <span className="widgetSmUserRate">3.8/5.0</span>
             </div>
            </div>
           <button className="widgetSmButton">
@@ -52,7 +52,7 @@ export default function WidgetSm() {
             <span className="widgetSmUsername">Mohammed Nassiri</span>
             <div className="ratingDiv">
             <img src="https://img.icons8.com/color/48/000000/star.png" alt="star" className="widgetSmIcon" />
-            <span className="widgetSmUserRate">4.5/5.0</span>
+            <span className="widgetSmUserRate">4.3/5.0</span>
             </div>
            </div>
           <button className="widgetSmButton">
@@ -70,7 +70,7 @@ export default function WidgetSm() {
             <span className="widgetSmUsername">John Keller</span>
             <div className="ratingDiv">
             <img src="https://img.icons8.com/color/48/000000/star.png" alt="star" className="widgetSmIcon" />
-            <span className="widgetSmUserRate">4.5/5.0</span>
+            <span className="widgetSmUserRate">4.0/5.0</span>
             </div>
            </div>
           <button className="widgetSmButton">
@@ -88,7 +88,7 @@ export default function WidgetSm() {
             <span className="widgetSmUsername">Leila Benchakroun</span>
             <div className="ratingDiv">
             <img src="https://img.icons8.com/color/48/000000/star.png" alt="star" className="widgetSmIcon" />
-            <span className="widgetSmUserRate">4.5/5.0</span>
+            <span className="widgetSmUserRate">3.9/5.0</span>
             </div>
            </div>
           <button className="widgetSmButton">
