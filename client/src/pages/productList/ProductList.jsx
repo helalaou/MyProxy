@@ -27,11 +27,11 @@ export default function ProductList() {
         );
       },
     },
-    { field: "Client", headerName: "Client", width: 170 }
+    { field: "Client", headerName: "Client", width: 200 }
     ,
     {
-      field: "Details",
-      headerName: "Details",
+      field: "IdClient",
+      headerName: "Id Client",
       width: 120,
     },
     {
