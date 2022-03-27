@@ -3,6 +3,8 @@ import "./widgetLg.css";
 //import axios
 import axios from "axios";
 
+import moment from "moment";
+
 
 
 
@@ -12,7 +14,12 @@ import axios from "axios";
 
 export default function WidgetLg() {
   const [data, setData] = react.useState([]);
-
+//use effect
+  react.useEffect(() => {
+    const interval = setInterval(() => {
+  
+        window.location.reload();
+    }, 30000);
 
 axios.get('http://localhost:3001/getOrders').then(function(response){
     
@@ -22,9 +29,8 @@ axios.get('http://localhost:3001/getOrders').then(function(response){
     console.log(error);
   }
   );
-      
-
-        
+    
+  }, []);
       
 
   
@@ -47,11 +53,11 @@ axios.get('http://localhost:3001/getOrders').then(function(response){
             return(
               <tr className="widgetLgTr">
               <td className="widgetLgUser">  
-                <span className="widgetLgName">{data.NameClient}</span>  
+                <span className="widgetLgName">{data.NameClient} {data.id}</span>  
               </td>
-              <td className="widgetLgOrder">Tacos Poulet</td>
-              <td className="widgetLgDate">26 March 2022</td>
-              <td className="widgetLgAmount">24.06 MAD</td>
+              <td className="widgetLgOrder">{data.Foods[0].FoodItem}</td>
+              <td className="widgetLgDate">{moment(data.Date).format("MMMM Do YYYY")}</td>
+              <td className="widgetLgAmount">{data.Foods[0].FoodPrice} MAD</td>
               <td className="widgetLgStatus">
                 <Button type={data.Status} />
               </td>
