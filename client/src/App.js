@@ -3,11 +3,9 @@ import Topbar from "./components/topbar/Topbar";
 import "./App.css";
 import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import UserList from "./pages/userList/UserList";
-import User from "./pages/user/User";
-import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
+import FakeForm from "./pages/fakeForm/FakeForm";
 
 function App() {
   return (
@@ -24,23 +22,23 @@ function App() {
       <div className="container">
         <Sidebar />
         <Switch>
+
           <Route exact path="/">
             <Home />
           </Route>
-          
-          <Route path="/user/:userId">
-            <User />
-          </Route>
-          <Route path="/newUser">
-            <NewUser />
-          </Route>
+
           <Route path="/products">
             <ProductList />
           </Route>
+
           <Route path="/product/:productId">
             <Product />
           </Route>
-          
+
+          <Route path="/fakerequests">
+            <FakeForm/>
+          </Route>
+
         </Switch>
       </div>
     </Router>
