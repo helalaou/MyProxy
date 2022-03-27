@@ -1,0 +1,59 @@
+/* Make the form look rounded */
+.fakeForm {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fakeForm__input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    /* center the input and the label */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* make the label appear on the left */
+    
+}
+input{
+        /*change to boarder color */
+
+    border: 4px solid #c3134c;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    }
+
+
+/* Make the button green and nice */
+.fakeForm__button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #3bb077;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    /* center the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
