@@ -19,11 +19,15 @@ const orderSchema=new mongooose.Schema({
     },
     Details:{
         type:String,
-        required:true
+        required:true 
     },
     Status:{
         type:String,
-        required:true
+        default:'Pending'
+    },
+    Date:{
+        type:Date,
+        default:Date.now
     },
     Time:{
         type:String,
